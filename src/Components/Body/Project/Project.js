@@ -3,7 +3,7 @@ import React from "react";
 const Project = () =>{
     return(
         <div id="project">
-            <p></p>
+            <p>This is Project</p>
         </div>
     )
 }

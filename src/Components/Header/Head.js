@@ -3,13 +3,13 @@ import { Container, Nav, Navbar } from "react-bootstrap";
 import './Head.css';
 const Head = ()=>{
     return(
-        <div>
-            <Navbar expand="lg" className="navbar">
+        <div className="sticky-top">
+            <Navbar expand="md" className="navbar ">
                 <Container>
-                    <Navbar.Brand href="/">Fuad</Navbar.Brand>
+                    <Navbar.Brand href="/" className="fs-3 fw-medium">Fuad</Navbar.Brand>
                     <Navbar.Toggle aria-controls="basic-navbar-nav" />
                     <Navbar.Collapse id="basic-navbar-nav">
-                    <Nav className="ms-auto">
+                    <Nav className="ms-auto gap-md-4 fs-5">
                         <Nav.Link href="#home">Home</Nav.Link>  
                         <Nav.Link href="#project">About</Nav.Link>
                         <Nav.Link href="#home">Services</Nav.Link>

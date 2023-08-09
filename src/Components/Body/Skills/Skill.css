@@ -1,0 +1,10 @@
+.skill{
+     height: 130px;
+    width: 170px; 
+    background-color: #EDF2F8;
+    /* box-shadow: 10px 10px 5px #ffc; */
+}
+.skill img{
+    height: 50px;
+    width: 50px;
+}

@@ -1,12 +1,12 @@
 import React from "react";
-import Hero from "./Body/Hero/Hero";
-import Project from "./Body/Project/Project";
+import Body from "./Body/Body";
+import Head from "./Header/Head";
 
 const Main = () =>{
     return(
-        <div className="container">
-            <Hero />
-            <Project />
+        <div >
+            <Head />
+            <Body />
         </div>
     )
 }
