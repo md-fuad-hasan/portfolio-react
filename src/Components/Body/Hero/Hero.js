@@ -1,4 +1,5 @@
 import React from "react";
+import './Hero.css';
 import Fuad from '../../../Assets/photo_me-removebg-preview.png';
 
 const Hero = () =>{

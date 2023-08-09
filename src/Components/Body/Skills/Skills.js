@@ -93,8 +93,8 @@ const skill = skillArray.map(skill=>{
 
 const Skills = () =>{
     return(
-        <div className="row text-center ">
-            <h1> Skills and Interested</h1>
+        <div className="row text-center my-5">
+            <h1> Skills and Interest</h1>
             {skill}
         </div>
     )
