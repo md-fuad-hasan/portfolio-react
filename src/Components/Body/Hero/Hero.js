@@ -4,7 +4,7 @@ import Fuad from '../../../Assets/photo_me-removebg-preview.png';
 
 const Hero = () =>{
     return(
-        <div className="hero row pb-5 bt-5">
+        <div className="hero row pb-5 bt-5" id="home">
             <div className="hero-left col-md-7 d-flex flex-column align-items-center justify-content-center">
                 <div className=" d-flex flex-column gap-2">
                     <span className="fw-bold fs-1">Hi I'm</span>

@@ -11,9 +11,9 @@ const Head = ()=>{
                     <Navbar.Collapse id="basic-navbar-nav">
                     <Nav className="ms-auto gap-md-4 fs-5">
                         <Nav.Link href="#home">Home</Nav.Link>  
-                        <Nav.Link href="#project">About</Nav.Link>
-                        <Nav.Link href="#home">Services</Nav.Link>
-                        <Nav.Link href="#home">Contact</Nav.Link>
+                        <Nav.Link href="#about">About</Nav.Link>
+                        <Nav.Link href="#project">Projects</Nav.Link>
+                        <Nav.Link href="#contact">Contact</Nav.Link>
                         
                     </Nav>
                     <Nav className="ms-auto">

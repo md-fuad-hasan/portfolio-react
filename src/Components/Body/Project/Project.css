@@ -1,0 +1,13 @@
+.project-card{
+    width: "25rem";
+    height: "35rem";
+}
+.project-card img{
+    width:100%;
+    height:68%;
+    object-fit:cover;
+    object-position: 0% 0%;
+}
+.project-github{
+    font-size: 40px;
+}

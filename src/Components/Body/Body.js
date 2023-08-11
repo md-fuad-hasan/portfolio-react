@@ -2,7 +2,7 @@ import React from "react";
 import Hero from "./Hero/Hero";
 import Project from "./Project/Project";
 import Skills from "./Skills/Skills";
-import Contact from "../Footer/Contact";
+import Contact from "./Contact/Contact";
 
 const Body = () =>{
     return(
