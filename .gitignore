@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-Collection.js
+Collection/
 
 # testing
 /coverage
