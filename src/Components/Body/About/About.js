@@ -7,9 +7,9 @@ import Fullstack from '../../../Assets/Logos/fullstack.jpg';
 const About = () =>{
     return(
         <div className="my-5" id="about">
-            <div class="container p-4">
-            <div class="row pb-5">
-                <div class="col-md-2">
+            <div className="container p-4">
+            <div className="row pb-5">
+                <div className="col-md-2">
 
                 </div>
                 <div className="col-md-8 text-center">

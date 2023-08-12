@@ -14,72 +14,84 @@ import JAVA from '../../../Assets/Logos/java.png';
 import Skill from "./Skill";
 
 const skillArray = [
-    {
+    {   
+        id : 1,
         logo : HTML,
         title: 'HTML',
         link : 'https://www.w3schools.com/html/',
     },
-    {
+    {   
+        id : 2,
         logo : CSS,
         title: 'CSS',
         link : 'https://developer.mozilla.org/en-US/docs/Web/CSS',
 
     },
-    {
+    {   
+        id : 3,
         logo : BOOTSTRAP,
         title: 'Bootstrap',
         link : 'https://getbootstrap.com/',
 
     },
-    {
+    {   
+        id : 4,
         logo : TAILWIND,
         title: 'TailwindCSS',
         link : 'https://tailwindcss.com/',
 
     },
-    {
+    {   
+        id : 5,
         logo : JS,
         title: 'JavaScript',
         link : 'https://developer.mozilla.org/en-US/docs/Web/JavaScript',
 
     },
-    {
+    {   
+        id : 6,
         logo : REACT,
         title: 'React',
         link : 'https://react.dev/',
 
     },
-    {
+    {   
+        id : 7,
         logo : PYTHON,
         title: 'Python',
         link : 'https://www.python.org/',
 
     },
-    {
+    {   
+        id : 8,
         logo : DJANGO,
         title: 'Django',
         link : 'https://www.djangoproject.com/',
 
     },
-    {
+    {   
+        id : 9,
         logo : C,
         title: 'C',
         link : 'https://www.w3schools.com/c/',
 
     },
-    {
+    {   
+        id : 10,
         logo : CPP,
         title: 'C++',
         link : 'https://www.w3schools.com/cpp/',
 
     },
-    {
+    {   
+        id : 11,
         logo : JAVA,
         title: 'Java',
         link : 'https://www.java.com/en/',
 
     },
-    {
+    {   
+        id : 12,
         logo : GIT,
         title: 'Git',
         link : 'https://git-scm.com/',
@@ -88,7 +100,7 @@ const skillArray = [
 ]
 
 const skill = skillArray.map(skill=>{
-    return <Skill logo={skill.logo} title={skill.title} link={skill.link}/>
+    return <Skill key={skill.id} logo={skill.logo} title={skill.title} link={skill.link}/>
 })
 
 const Skills = () =>{

@@ -2,8 +2,34 @@ import React from "react";
 import './Contact.css';
 import { faFacebook, faGithub, faInstagram, faLinkedinIn } from "@fortawesome/free-brands-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import emailjs from '@emailjs/browser';
+import { useRef } from "react"; 
+import * as collection from '../../../MailToEmail/Collection';
 
 const Contact = () =>{
+    const form = useRef();
+    const SERVICE_ID = collection.SERVICE_ID;
+    const TEMPLATE_ID = collection.TEMPLATE_ID;
+    const PUBLIC_KEY = collection.PUBLIC_KEY;
+    const handleSubmit =(e)=>{
+        emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
+        .then((result) => {
+            alert(result.text);
+            e.target.name.value='';
+            e.target.email.value='';
+            e.target.message.value='';
+        })
+        .then((error) => {
+            console.log("Something went to Wrong. Please try later.");
+        })
+
+        
+        e.preventDefault();
+
+    };
+
+
+
     return(
         <div className="my-5 container p-5" id="contact">
             <h1 className="mb-5 text-center"> Contact with Me</h1>
@@ -25,7 +51,7 @@ const Contact = () =>{
                     </div>
                 </div>
                 <div className="col-md-6">
-                    <form>
+                    <form ref={form} onSubmit={handleSubmit}>
                         <input type="text" name="name" className="form-control" placeholder="Your name" /><br />
                         <input type="email" name="email" className="form-control" placeholder="Email"/><br />
                         <textarea  name="message" className="form-control" placeholder="Message"/><br />
