@@ -1,5 +1,6 @@
 import React from "react";
 import { Container, Nav, Navbar } from "react-bootstrap";
+import Resume from '../../Assets/Resume/Fuad_s_Resume.pdf';
 import './Head.css';
 const Head = ()=>{
     return(
@@ -13,11 +14,11 @@ const Head = ()=>{
                         <Nav.Link href="#home">Home</Nav.Link>  
                         <Nav.Link href="#about">About</Nav.Link>
                         <Nav.Link href="#project">Projects</Nav.Link>
-                        <Nav.Link href="#contact">Contact</Nav.Link>
+                        <Nav.Link href={Resume} target="_blank">Resume</Nav.Link>
                         
                     </Nav>
                     <Nav className="ms-auto">
-                        <button className="btn btn-success ">Contact Me</button>
+                    <Nav.Link href="#contact"><button className="btn btn-success ">Contact Me</button></Nav.Link>
                     </Nav>
                     </Navbar.Collapse>
                 </Container>

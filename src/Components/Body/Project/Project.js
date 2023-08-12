@@ -8,7 +8,7 @@ import { faGithub } from "@fortawesome/free-brands-svg-icons";
 
 const Project = () =>{
     return(
-        <div className="my-5" id="project">
+        <div className="my-5 py-5" id="project">
             <div>
                 <h1 className="text-center mb-5 fs-10">Projects </h1>
             </div>
