@@ -1,4 +1,4 @@
-export const SERVICE_ID = "fhifhjdsbfkb";
-export const TEMPLATE_ID = "djfdjnjkd";
-export const PUBLIC_KEY = 'jfjndjds';
+export const SERVICE_ID = "ssss";
+export const TEMPLATE_ID = "ttttt";
+export const PUBLIC_KEY = 'pppppp';
 

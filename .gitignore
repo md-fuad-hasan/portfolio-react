@@ -5,7 +5,7 @@
 /.pnp
 .pnp.js
 
-MailToEmail/
+Collection.js
 
 # testing
 /coverage
