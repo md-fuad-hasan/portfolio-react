@@ -4,7 +4,7 @@ import { faFacebook, faGithub, faInstagram, faLinkedinIn } from "@fortawesome/fr
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import emailjs from '@emailjs/browser';
 import { useRef } from "react"; 
-import * as collection from '../../../MailToEmail/Collection';
+import * as collection from '../../../Collection/Collection';
 
 const Contact = () =>{
     const form = useRef();
@@ -14,13 +14,14 @@ const Contact = () =>{
     const handleSubmit =(e)=>{
         emailjs.sendForm(SERVICE_ID, TEMPLATE_ID, form.current, PUBLIC_KEY)
         .then((result) => {
-            alert(result.text);
+            alert("Sent Successfully!");
             e.target.name.value='';
             e.target.email.value='';
             e.target.message.value='';
+
         })
-        .then((error) => {
-            console.log("Something went to Wrong. Please try later.");
+        .catch((error) => {
+            alert("Something went to Wrong. Please try later.");
         })
 
         
@@ -52,9 +53,9 @@ const Contact = () =>{
                 </div>
                 <div className="col-md-6">
                     <form ref={form} onSubmit={handleSubmit}>
-                        <input type="text" name="name" className="form-control" placeholder="Your name" /><br />
-                        <input type="email" name="email" className="form-control" placeholder="Email"/><br />
-                        <textarea  name="message" className="form-control" placeholder="Message"/><br />
+                        <input type="text" name="name" className="form-control" placeholder="Your name" required /><br />
+                        <input type="email" name="email" className="form-control" placeholder="Email" required/><br />
+                        <textarea  name="message" className="form-control" placeholder="Message" required/><br />
                         <button className="btn btn-success w-100" >Send</button>
                     </form>
                 </div>
